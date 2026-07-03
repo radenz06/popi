@@ -1,12 +1,7 @@
 {
-  "version": 2,
-  "routes": [
-    { "src": "/api/s", "dest": "/api/upload.js" },
-    { "src": "/api/f/([^/]+)", "dest": "/api/f/[id].js?id=$1" },
-    { "src": "/f/([^/]+)", "dest": "/api/f/[id].js?id=$1" },
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*\\.(js|css|mp3|jpg|jpeg|png|gif|svg|ico|webp|woff|woff2|ttf))", "dest": "/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/f/:id", "destination": "/api/f/[id].js" },
+    { "source": "/api/s", "destination": "/api/upload.js" }
   ],
   "headers": [
     {
