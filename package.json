@@ -8,8 +8,10 @@
   "dependencies": {
     "busboy": "^1.6.0",
     "dotenv": "^17.4.2",
+    "googleapis": "^140.0.1"
+  },
+  "devDependencies": {
     "express": "^5.2.1",
-    "googleapis": "^140.0.1",
     "multer": "^2.2.0"
   }
 }
