@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GET LINK BY DENZYX</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body background="background.jpg">
+
+  <!-- CURSOR CAHAYA -->
+  <div id="cursor-glow"></div>
+
+  <!-- HEADER MARQUEE NEON -->
+  <header class="site-header">
+    <marquee class="neon-marquee" behavior="scroll" direction="left" scrollamount="8">
+      GET LINK BY DENZYX &nbsp;&nbsp;•&nbsp;&nbsp; GET LINK BY DENZYX &nbsp;&nbsp;•&nbsp;&nbsp; GET LINK BY DENZYX
+    </marquee>
+  </header>
+
+  <!-- SOUND PLAYER -->
+  <div class="sound-player">
+    <button id="soundToggle" class="sound-btn" aria-label="Play sound">▶</button>
+    <span class="sound-label">background sound</span>
+    <audio id="bgSound" src="sound.mp3" loop preload="none"></audio>
+  </div>
+
+  <!-- MAIN: UPLOAD BOX -->
+  <main class="main-area">
+    <div id="dropZone" class="upload-box">
+      <p class="upload-title">DROP FILE DI SINI</p>
+      <p class="upload-sub">atau klik buat pilih file</p>
+      <p class="upload-types">mp3 · jpg/png · pdf · mp4 — max 25MB</p>
+      <input type="file" id="fileInput" accept=".mp3,.jpg,.jpeg,.png,.pdf,.mp4" hidden>
+    </div>
+
+    <div id="progressWrap" class="progress-wrap hidden">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <div id="resultBox" class="result-box hidden">
+      <p class="result-label">LINK PUBLIK LU:</p>
+      <div class="result-row">
+        <input id="resultLink" type="text" readonly>
+        <button id="copyBtn">COPY</button>
+      </div>
+    </div>
+
+    <div id="statusMsg" class="status-msg"></div>
+  </main>
+
+  <!-- FOOTER MARQUEE -->
+  <footer class="site-footer">
+    <marquee class="white-marquee" behavior="scroll" direction="left" scrollamount="6">
+      Dev by denzyx &nbsp;•&nbsp; Dibuat pada Jumat, 03 Juni &nbsp;•&nbsp; Dev by denzyx &nbsp;•&nbsp; Dibuat pada Jumat, 03 Juni
+    </marquee>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

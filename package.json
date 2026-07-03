@@ -1,0 +1,15 @@
+{
+  "name": "get-link-by-denzyx",
+  "version": "2.0.0",
+  "description": "Upload file -> link publik, storage Google Drive, host di Vercel",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "googleapis": "^140.0.1",
+    "multer": "^2.2.0"
+  }
+}
